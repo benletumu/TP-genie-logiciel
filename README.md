@@ -1,1 +1,0 @@
-# TP-g-nie-logiciel
