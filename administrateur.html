@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tableau de bord Agent - Vide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen pb-20">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center p-4 justify-between max-w-5xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="bg-primary/10 p-2 rounded-lg text-primary">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Portail Académique</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full w-10 h-10 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400"><span class="material-symbols-outlined">person</span></div>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto p-4 space-y-6">
+<section>
+<div class="flex flex-col gap-2 mb-4">
+<h1 class="text-2xl font-bold tracking-tight">Bonjour, Agent</h1>
+<p class="text-slate-500 dark:text-slate-400">Voici l'aperçu de votre activité aujourd'hui.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Documents traités</p>
+<span class="material-symbols-outlined text-primary">task_alt</span>
+</div>
+<p class="text-3xl font-bold leading-tight">—</p>
+<p class="text-slate-400 text-sm font-medium flex items-center gap-1">
+                    Aucune activité récente
+                </p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">En attente</p>
+<span class="material-symbols-outlined text-amber-500">pending_actions</span>
+</div>
+<p class="text-3xl font-bold leading-tight">0</p>
+<p class="text-slate-400 text-sm font-medium flex items-center gap-1">
+                    Tout est à jour
+                </p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="flex justify-between items-start">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Rejetés</p>
+<span class="material-symbols-outlined text-rose-500">error_outline</span>
+</div>
+<p class="text-3xl font-bold leading-tight">0</p>
+<p class="text-slate-400 text-sm font-medium flex items-center gap-1">
+                    Aucune erreur détectée
+                </p>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">search</span>
+<h3 class="text-lg font-bold">Recherche Étudiant</h3>
+</div>
+<div class="relative">
+<label class="flex flex-col w-full group">
+<div class="flex w-full items-stretch rounded-lg h-12 bg-slate-100 dark:bg-slate-900 border border-transparent focus-within:border-primary transition-all">
+<div class="text-slate-400 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">person_search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:outline-0 focus:ring-0 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 px-4 text-base font-normal leading-normal" placeholder="Entrez le matricule (ex: 2024-ST-001)"/>
+</div>
+</label>
+</div>
+<div class="p-4 rounded-lg bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400">history</span>
+</div>
+<p class="text-sm text-slate-500 italic">Aucune recherche récente</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">upload_file</span>
+<h3 class="text-lg font-bold">Nouveau Document</h3>
+</div>
+<div class="border-2 border-dashed border-slate-300 dark:border-slate-600 rounded-xl p-8 flex flex-col items-center justify-center gap-3 hover:border-primary transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20">
+<span class="material-symbols-outlined text-primary">cloud_upload</span>
+</div>
+<div class="text-center">
+<p class="font-semibold text-slate-900 dark:text-slate-100">Cliquez ou déposez un fichier</p>
+<p class="text-sm text-slate-500">PDF, PNG, JPG (max. 10MB)</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+<div class="p-6 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">send</span>
+<h3 class="text-lg font-bold">Envois récents</h3>
+</div>
+<button class="text-slate-400 text-sm font-semibold bg-slate-100 dark:bg-slate-700/50 px-4 py-2 rounded-lg cursor-not-allowed">
+                Tout voir
+            </button>
+</div>
+<div class="p-12 flex flex-col items-center justify-center text-center space-y-3">
+<div class="w-16 h-16 bg-slate-100 dark:bg-slate-900 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-300 text-4xl">folder_off</span>
+</div>
+<div>
+<p class="font-semibold text-slate-900 dark:text-slate-100">Aucun envoi récent</p>
+<p class="text-sm text-slate-500 max-w-xs mx-auto">Les documents que vous envoyez apparaîtront ici pour un suivi rapide.</p>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-2 z-50">
+<div class="flex max-w-lg mx-auto gap-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Accueil</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">search</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Recherche</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">send</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Envois</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Profil</p>
+</a>
+</div>
+</nav>
+</body></html>
